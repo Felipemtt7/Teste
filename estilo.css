@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    list-style-type: none;
+    text-decoration: none;
+   
+}
+
+
+/* ---------------------CONTEINER PRINCIPAL-----------------------*/
+
+.container{
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+    grid-template-rows: 0.5fr 3fr 1.5fr;
+    gap: 15px;
+    
+    
+   
+    grid-template-areas: "h h h"
+                         "m m a"
+                         "f f f";
+
+   width: 100%;
+   height: 100vh;
+    
+}
+
+.header{
+    grid-area: h;
+    background-color: antiquewhite;
+   
+
+
+}
+.main{
+    grid-area: m;
+   
+    background-color: #212020;
+    gap: 100px;
+    text-align: center;
+    
+    
+    
+   
+}
+span{
+    display: flex;
+    align-items: center;
+ float: left;
+
+}
+.aside{
+    grid-area: a;
+    background-color:rgb(151, 199, 218);
+    
+   
+}
+.footer{
+    grid-area: f;
+    background-color: rgb(255, 255, 255);
+  
+    
+   
+}
+
+/* ---------------------CONTEINER PRINCIPAL-----------------------*/
+
+/* ---------------------HEADER--------------------------*/
+.cabec_container{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 3px 3px  #212020;
+    background-color: rgba(0, 0, 0, 0.78);
+    
+}
+
+
+.logo{
+    
+   width: 40px;
+   height: 40px;
+   margin: 20px;
+   
+   
+}
+img{
+    max-width: 100%;
+    height:auto;
+    float:right;
+}
+.menu{
+    display: flex;
+           
+}
+.menu li a{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    padding: 20px 20px 20px 20px;
+    font-size: 18px;
+   
+}
+.menu li a:hover{
+    display: block;
+    margin: 10px;
+    padding: 20px 20px 20px 20px;
+    color:white;
+    background-color:rgba(248, 242, 242, 0.6);
+    border-radius: 20% 20%;
+    
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h1{
+    margin: 15px;
+}
+h2{
+    margin:15px ;
+}
+
+
+.tabela{
+    max-width:100%;
+    height:auto;
+      
+}
+
+
+.jogos{
+    max-width: 100%;
+    height: auto;
+}
+.proximos{
+text-align: center;
+font-size: 16px;
+}
+.copy{
+    text-align: center;
+    font-size: 10px;
+}
+.br-texto{
+    color: rgb(255, 255, 255);
+  
+   
+}
+.texto-br{
+    color: rgb(255, 255, 255);
+   
+}
+.inter{
+    max-width: 100%;
+    height: auto;
+}
+.maumau{
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 900px) {
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        gap: 15px;
+           
+    }
+    .header{
+        text-align: center;
+        
+    }
+    .main{
+        text-align: center;
+    }
+    .footer{
+        width: 100%;
+    }
+   
+    .menu{
+        display: flex;
+        width: 100vw;
+        
+               
+    }
+    .menu li a{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        padding: 20px 20px 20px 20px;
+        font-size: 12px;
+     
+       
+    }
+    .menu li a:hover{
+        display: block;
+        margin: 10px;
+        padding: 20px 20px 20px 20px;
+        color:white;
+        background-color:rgba(248, 242, 242, 0.6);
+        border-radius: 20% 20%;
+        
+    } 
+    .texto-br{
+        display: flex;
+        color: #fff;
+    }
+    
+    
+}
+/* ---------------------HEADER------------------------*/
+
+/*----------------------FOOTER-----------------------*/
+
+
+/*----------------------FOOTER-----------------------*/
